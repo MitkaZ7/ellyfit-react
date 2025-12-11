@@ -21,7 +21,8 @@ const Services = () => {
               персональные тренировки
             </p>
             <p className={styles['services__list-item-description']}>
-              силовые, кардио, функциональные, HIIT, стретчинг и др.
+              силовые, кардио, функциональные, HIIT, <br />
+              стретчинг и др.
             </p>
           </div>
         </li>

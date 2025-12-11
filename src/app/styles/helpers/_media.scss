@@ -14,7 +14,7 @@
 }
 
 @mixin tablet-above {
-    @media (width > rem(bps.$laptop)) {
+    @media (width > rem(bps.$tablet)) {
         @content;
     }
 }
