@@ -1,0 +1,129 @@
+@use '../../styles/helpers' as *;
+@use '../../styles/variables' as *;
+
+.hero {
+    padding-block: rem(135) rem(170);
+    display: flex;
+    flex-direction: column;
+    row-gap: rem(110);
+    &__main {
+        display: grid;
+        grid-template-areas: 'picture text';
+        align-items: center;
+        column-gap: rem(25);
+        max-height: rem(550);
+        margin-bottom: rem(110);
+    }
+
+    &__picture-wrapper {
+        aspect-ratio: 4 / 3;
+        grid-area: picture;
+        display: flex;
+        justify-content: center;
+        min-width: rem(735);
+        // height: rem(545);
+        height: 100%;
+        width: 100%;
+
+        background-color: $color-light;
+        align-items: center;
+    }
+    &__picture {
+        width: 100%;
+        height: 100%;
+        max-width: rem(575);
+        max-height: rem(425);
+        object-fit: cover;
+        display: block;
+    }
+    &__text-wrapper {
+        grid-area: text;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        // max-width: 600px;
+        height: 100%;
+    }
+    &__name {
+        // text-align: right;
+        @include fluid-text(40, 20);
+        text-transform: uppercase;
+        align-self: flex-end;
+        justify-self: start;
+        padding-right: rem(25);
+    }
+    &__title {
+        font-weight: 900;
+        order: 2;
+        white-space: nowrap;
+    }
+    &__subtitle {
+        font-weight: 200;
+        @include fluid-text(24, 16);
+        color: $color-grey;
+        line-height: rem(28);
+        max-width: rem(500);
+        order: 3;
+        padding-left: rem(25);
+    }
+
+    &__slider {
+        display: flex;
+        flex-flow: column wrap;
+        position: relative;
+        &-text {
+            font-weight: 100;
+            font-size: rem(20);
+            position: relative;
+            color: $color-grey;
+            margin-bottom: 50px;
+            &::after {
+                content: '';
+                position: absolute;
+                height: 1px;
+                background-color: $color-grey;
+                width: 70%;
+                top: 50%;
+                left: rem(170);
+            }
+        }
+        &-image-wrapper {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            position: relative;
+            &::after {
+                content: '';
+                position: absolute;
+                height: 100%;
+                background-color: $color-grey;
+                width: 1px;
+                left: 0;
+                right: 0;
+            }
+        }
+        &-image {
+            object-fit: fill;
+            max-width: 1130px;
+            max-height: 825px;
+
+            align-self: center;
+        }
+        &-controls {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            z-index: 3;
+            display: flex;
+            gap: rem(15);
+            transform: translateX(-50%);
+        }
+        &-dot {
+            display: block;
+            background-color: $color-light;
+            width: rem(23);
+            height: rem(23);
+            border-radius: 50%;
+        }
+    }
+}

@@ -1,0 +1,23 @@
+@use '../../styles/helpers' as *;
+@use '../../styles/variables' as *;
+.about {
+    &__title {
+        font-weight: 800;
+        @include fluid-text(128, 60);
+    }
+    &__text-wrapper {
+        background-color: $color-light;
+        color: $color-dark;
+    }
+    &__text-wrapper-inner {
+        font-weight: 200;
+    }
+    &__advantages-list {
+        font-weight: 300;
+        display: grid;
+        grid-template-rows: repeat(3, 1fr);
+        row-gap: rem(50);
+        @include fluid-text(36, 24);
+        text-align: right;
+    }
+}
