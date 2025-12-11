@@ -1,0 +1,65 @@
+@use './breakpoints' as bps;
+@use './functions' as *;
+
+@mixin laptop-above {
+    @media (width > rem(bps.$laptop)) {
+        @content;
+    }
+}
+
+@mixin laptop {
+    @media (width <= rem(bps.$laptop)) {
+        @content;
+    }
+}
+
+@mixin tablet-above {
+    @media (width > rem(bps.$laptop)) {
+        @content;
+    }
+}
+@mixin tablet {
+    @media (width <= rem(bps.$tablet)) {
+        @content;
+    }
+}
+@mixin mobile-above {
+    @media (width > rem(bps.$mobile)) {
+        @content;
+    }
+}
+@mixin mobile {
+    @media (width <= rem(bps.$mobile)) {
+        @content;
+    }
+}
+
+@mixin mobile-s-above {
+    @media (width > rem(bps.$mobile-s)) {
+        @content;
+    }
+}
+
+@mixin mobile-s {
+    @media (width <= rem(bps.$mobile-s)) {
+        @content;
+    }
+}
+
+// убрать эффект залипания на тач скрине
+@mixin hover($hasActiveEffectOnMObile: true) {
+    @media (any-hover: hover) {
+        &:hover {
+            @content;
+            transform: scale(1.1);
+        }
+    }
+    @if ($hasActiveEffectOnMObile) {
+        @media (any-hover: none) {
+            &:active {
+                @content;
+                transform: scale(1.1);
+            }
+        }
+    }
+}

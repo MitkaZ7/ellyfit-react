@@ -1,0 +1,24 @@
+@use '../../styles/helpers' as *;
+@use '../../styles/variables' as *;
+
+.header {
+    height: rem(90);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    &::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        width: rem(695);
+        left: 50%;
+        transform: translateX(-50%);
+
+        border-bottom: 2px solid $color-light;
+    }
+
+    &__logo {
+        width: rem(85);
+    }
+}
