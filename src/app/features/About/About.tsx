@@ -9,8 +9,13 @@ const About = () => {
         <h2 className={classNames(styles.about__title)}>ВАШ ТРЕНЕР ЕЛЕНА</h2>
         <p className={classNames(styles.about__subtitle)}>знакомство</p>
       </div>
+
       <div className={classNames(styles.about__main)}>
-        <img src={aboutImage} alt='' />
+        <img
+          src={aboutImage}
+          alt=''
+          className={classNames(styles.about__image)}
+        />
         <div className={styles['about__text-wrapper']}>
           <ul className={styles['about__advantages-list']}>
             <li className={styles['about__advantages-item']}>
