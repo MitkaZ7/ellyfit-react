@@ -2,11 +2,13 @@
 @use '../../styles/variables' as *;
 
 .header {
-    height: rem(90);
+    background-color: $color-light2;
+    height: rem(70);
     display: flex;
     justify-content: space-between;
     align-items: center;
     position: relative;
+    padding: rem(0) rem(60);
     &::after {
         content: '';
         position: absolute;
@@ -19,6 +21,10 @@
     }
 
     &__logo {
-        width: rem(85);
+        color: $color-dark;
+        font-family: 'Cormorant Garamond';
+        @include fluid-text(24, 14);
+        font-style: italic;
+        font-weight: 300;
     }
 }

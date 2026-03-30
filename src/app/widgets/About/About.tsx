@@ -1,23 +1,25 @@
 import styles from './About.module.scss'
 import classNames from 'classnames'
 import aboutImage from '../../../shared/assets/images/About-image.jpg'
-
-const About = () => {
+import { PageTitle } from '@shared/ui/PageTitle'
+export const About = () => {
   return (
     <section className={classNames(styles.about)}>
       <div className={classNames(styles.about__titles)}>
-        <h2 className={classNames(styles.about__title)}>ВАШ ТРЕНЕР ЕЛЕНА</h2>
-        <p className={classNames(styles.about__subtitle)}>знакомство</p>
+        <PageTitle text='⎯ обо мне'></PageTitle>
+        <p className={classNames(styles.about__title)}>
+          Ваш тренер - <em style={{ color: 'red' }}>Елена</em>
+        </p>
       </div>
 
       <div className={classNames(styles.about__main)}>
-        <img
+        {/* <img
           src={aboutImage}
           alt=''
           className={classNames(styles.about__image)}
-        />
+        /> */}
         <div className={styles['about__text-wrapper']}>
-          <ul className={styles['about__advantages-list']}>
+          {/* <ul className={styles['about__advantages-list']}>
             <li className={styles['about__advantages-item']}>
               Более 14 лет в фитнесе
             </li>
@@ -27,7 +29,7 @@ const About = () => {
             <li className={styles['about__advantages-item']}>
               Авторская методика
             </li>
-          </ul>
+          </ul> */}
           <div className={styles['about__text-wrapper-inner']}>
             <p className={styles['about__text-paragraph']}>
               Помогу вам обрести тело мечты, стать по-настоящему лучшей версией
@@ -53,5 +55,3 @@ const About = () => {
     </section>
   )
 }
-
-export default About

@@ -1,18 +1,25 @@
 // import { Hero } from '@/features/hero'
 // import { Footer } from '@/widgets/footer'
-
-import Header from './features/Header/Header'
-import Hero from './features/Hero/Hero'
-import Services from './features/Services/Services'
-import About from './features/About/About'
-
+import { Layout } from '@shared/ui'
+import Header from './widgets/Header/Header'
+import Hero from './widgets/Hero/Hero'
+import Services from './widgets/Services/Services'
+import { About } from '@app/widgets/About'
+import { Ticker } from '@app/widgets/Ticker'
+import { Cursor } from '@shared/ui/Cursor/Cursor'
 function App() {
   return (
     <>
-      <Header />
-      <Hero />
-      <Services />
+      <Cursor />
+      {/* <Layout>
+        <Header />
+        <Hero />
+      </Layout>
+
+      <Ticker /> */}
       <About />
+      {/* <Services />
+      <About /> */}
     </>
   )
 }

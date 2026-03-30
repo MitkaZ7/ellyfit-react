@@ -36,3 +36,50 @@
     font-style: normal;
     src: url('../../shared/assets/fonts/TildaSans-VF.woff2') format('woff2');
 }
+
+@font-face {
+    font-family: 'DM Sans';
+    font-weight: 300;
+    font-style: normal;
+    src: url('../../shared/assets/fonts/DMSans-Medium.woff2') format('woff2');
+}
+@font-face {
+    font-family: 'DM Sans';
+    font-weight: 300;
+    font-style: normal;
+    src: url('../../shared/assets/fonts/DMSans-Light.woff2') format('woff2');
+}
+@font-face {
+    font-family: 'DM Sans';
+    font-weight: 400;
+    font-style: normal;
+    src: url('../../shared/assets/fonts/DMSans-Regular.woff2') format('woff2');
+}
+@font-face {
+    font-family: 'DM Sans';
+    font-weight: 700;
+    font-style: normal;
+    src: url('../../shared/assets/fonts/DMSans-Bold.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'Cormorant Garamond';
+    font-weight: 300;
+    font-style: italic;
+    src: url('../../shared/assets/fonts/CormorantGaramond-LightItalic.woff2')
+        format('woff2');
+}
+@font-face {
+    font-family: 'Cormorant Garamond';
+    font-weight: 300;
+    font-style: normal;
+    src: url('../../shared/assets/fonts/CormorantGaramond-Light.woff2')
+        format('woff2');
+}
+@font-face {
+    font-family: 'Cormorant Garamond';
+    font-weight: 600;
+    font-style: italic;
+    src: url('../../shared/assets/fonts/CormorantGaramond-SemiBoldItalic-2.woff2')
+        format('woff2');
+}

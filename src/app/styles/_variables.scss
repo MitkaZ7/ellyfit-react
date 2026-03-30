@@ -1,16 +1,18 @@
-$container-width: 1440px;
-$container-padding-x: 40px;
+$container-width: 1800px;
+$container-padding-x: 60px;
 
-$font-family-base: 'Inter', sans-serif;
-$font-accent: 'Tilda Sans VF', serif;
+$font-family-base: 'DM Sans', sans-serif;
+$font-accent: 'Cormorant Garamond', serif;
 $font-accent-2: 'Tenor Sans', serif;
 $font-accent-3: 'IBM plex sans', sans-serif;
-$color-light: #ffffff;
-$color-dark: #0f0e0e;
-$color-grey: #acacac;
+$color-light: #f7f4ee;
+$color-light2: #faf9f7;
+$color-light-grey: #8a8585;
+$color-dark: #0f0f0f;
+$color-grey: #8a8585;
 $color-grey-2: #9a9a9a;
 $color-grey-3: #626262;
-$color-accent: #ffd11a;
-
+$color-accent: #c04018;
+$color-hovering: rgba(192, 64, 24, 0.15);
 $color-pink: #ec6c99;
 $transition-duration: 0.2s;

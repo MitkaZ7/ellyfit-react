@@ -1,19 +1,37 @@
 @use './variables' as *;
 @use './helpers' as *;
 
+*,
+*::before,
+*::after {
+    cursor: none !important;
+}
+@media (hover: none) {
+    *,
+    *::before,
+    *::after {
+        cursor: auto !important;
+    }
+}
+
 html {
     font-family: $font-family-base;
-    background-color: $color-dark;
+    background-color: $color-light2;
     color: $color-light;
+    box-sizing: border-box;
     &.is-lock {
         overflow: hidden;
     }
 }
 
 .container {
-    max-width: calc($container-width) + $container-padding-x * 2;
+    // max-width: calc($container-width) + $container-padding-x * 2;
+    width: 100%;
     margin-inline: auto;
     padding-inline: $container-padding-x;
+}
+.fullWidth {
+    width: 100%;
 }
 
 main {
@@ -102,14 +120,16 @@ textarea,
 select,
 svg * {
     transition-duration: $transition-duration;
+    border: none;
+    outline: none;
 }
 
 a {
     color: inherit;
 
-    @include hover {
-        color: $color-light;
-    }
+    // @include hover {
+    //     color: $color-light;
+    // }
 
     &[class] {
         text-decoration: none;

@@ -1,7 +1,7 @@
 @use '../../styles/helpers' as *;
 @use '../../styles/variables' as *;
 .about {
-    border: 2px solid red;
+    padding-block: rem(130);
     &__image {
         width: 100%;
         height: 100%;
@@ -13,8 +13,10 @@
         border: 1px solid green;
     }
     &__title {
-        font-weight: 800;
-        @include fluid-text(128, 60);
+        color: $color-dark;
+        font-weight: 300;
+        font-family: 'Cormorant Garamond';
+        @include fluid-text(66, 30);
     }
     &__subtitle {
         text-align: right;
@@ -23,34 +25,23 @@
         color: $color-grey-3;
     }
     &__main {
-        height: 1095px;
         display: flex;
     }
     &__text-wrapper {
-        background-color: $color-light;
         color: $color-dark;
-        min-width: 964px;
-        z-index: 1;
-        width: 100%;
+
         display: flex;
 
-        justify-content: space-between;
+        // justify-content: space-between;
         flex-flow: column;
-        transform: translateX(-17%);
-        padding: rem(70) rem(25) rem(70) rem(270);
-        // text-align: right;
     }
     &__text-wrapper-inner {
-        background-color: antiquewhite;
         word-break: keep-all;
-        font-weight: 100;
-        align-self: center;
 
-        transform: translateX(-50px);
+        align-self: center;
     }
     &__text-paragraph {
         @include fluid-text(32, 24);
-        padding-top: rem(100);
     }
     &__advantages-list {
         font-weight: 300;

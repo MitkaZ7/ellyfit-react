@@ -1,0 +1,14 @@
+@use '@app/styles/helpers' as *;
+@use '@app/styles/variables' as *;
+.page-title {
+    letter-spacing: 0.5em;
+    color: $color-accent;
+    font-weight: 300;
+    text-transform: uppercase;
+    justify-self: start;
+    padding-right: rem(25);
+    margin-bottom: rem(30);
+    position: relative;
+    align-self: flex-start;
+    @include fluid-text(10, 10);
+}

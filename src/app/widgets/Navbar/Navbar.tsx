@@ -36,7 +36,7 @@ const Navbar = () => {
               className={classNames(styles.navbar__menu_link)}
               onClick={toggleMenu}
             >
-              Услуги
+              Программы
             </a>
           </li>
           <li className='navbar__menu-item'>
@@ -45,7 +45,7 @@ const Navbar = () => {
               className={classNames(styles.navbar__menu_link)}
               onClick={toggleMenu}
             >
-              Отзывы
+              Питание
             </a>
           </li>
           <li className='navbar__menu-item'>
@@ -54,7 +54,7 @@ const Navbar = () => {
               className={classNames(styles.navbar__menu_link)}
               onClick={toggleMenu}
             >
-              Контакты
+              Отзывы
             </a>
           </li>
         </ul>
