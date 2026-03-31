@@ -3,10 +3,10 @@
 
 .navbar {
     display: flex;
-
     font-weight: 300;
     color: $color-light-grey;
     text-transform: uppercase;
+
     @include fluid-text(11, 14);
     &__inner {
         display: flex;

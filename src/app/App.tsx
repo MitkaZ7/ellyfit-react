@@ -11,12 +11,12 @@ function App() {
   return (
     <>
       <Cursor />
-      {/* <Layout>
+      <Layout>
         <Header />
         <Hero />
       </Layout>
 
-      <Ticker /> */}
+      <Ticker />
       <About />
       {/* <Services />
       <About /> */}
