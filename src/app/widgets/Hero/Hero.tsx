@@ -7,7 +7,7 @@ import { PageTitle } from '@shared/ui/PageTitle'
 const STATS = [
   { value: '14+', label: 'лет опыта' },
   { value: '>20', label: 'клиентов' },
-  // { value: '%', label: 'рекомендуют' },
+  { value: '®', label: 'Дипломированный тренер' },
 ] as const
 
 const Hero = () => {
@@ -15,7 +15,7 @@ const Hero = () => {
     <div className={classNames(styles.hero)}>
       <div className={classNames(styles.hero__main)}>
         <div className={styles['hero__text-wrapper']}>
-          <PageTitle text='⎯ пернсональный тренер ⎯ анапа'></PageTitle>
+          <PageTitle text='пернсональный тренер ⎯ анапа'></PageTitle>
           <h1 className={classNames(styles.hero__title)}>
             Твой путь к <em>идеальному</em> телу
           </h1>

@@ -1,0 +1,21 @@
+@use '@app/styles/helpers' as *;
+@use '@app/styles/variables' as *;
+.section-subtitle {
+    font-family: $font-accent;
+    color: $color-dark;
+    line-height: rem(70);
+    letter-spacing: 0.04em;
+    // color: $color-accent;
+    // font-weight: 300;
+    // text-transform: uppercase;
+    // justify-self: start;
+    // padding-right: rem(25);
+    // margin-bottom: rem(30);
+    // position: relative;
+    // align-self: flex-start;
+    @include fluid-text(66, 60);
+    em {
+        font-style: italic;
+        color: $color-accent;
+    }
+}

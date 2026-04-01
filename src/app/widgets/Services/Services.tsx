@@ -1,24 +1,21 @@
 import styles from './Services.module.scss'
 import classNames from 'classnames'
-const Services = () => {
+import { PageTitle } from '@shared/ui/PageTitle'
+export const Services = () => {
   return (
     <section className={classNames(styles.services)}>
       <div className={classNames(styles.services__titles)}>
-        <p className={classNames(styles.services__subtitle)}>
-          Персональный подход
-        </p>
-        <h2 className={classNames(styles.services__title)}>
-          Как я могу
-          <br />
-          помочь?
-        </h2>
+        <PageTitle
+          text='программы'
+          // className={classNames(styles.services__title)}
+        ></PageTitle>
       </div>
       <ul className={classNames(styles.services__list)}>
         <li className={styles['services__list-item']}>
           <span className={styles['services__list-item-dot']}></span>
           <div className={styles['services__text-wrapper']}>
             <p className={styles['services__list-item-title']}>
-              персональные тренировки
+              Персональные тренировки
             </p>
             <p className={styles['services__list-item-description']}>
               силовые, кардио, функциональные, HIIT, <br />
@@ -75,5 +72,3 @@ const Services = () => {
     </section>
   )
 }
-
-export default Services

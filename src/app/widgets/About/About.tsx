@@ -4,12 +4,12 @@ import aboutImage from '@shared/assets/images//IMG_0325.jpg'
 import { PageTitle } from '@shared/ui/PageTitle'
 export const About = () => {
   return (
-    <section className={classNames(styles.about)}>
+    <section className={classNames(styles.about)} id='about-section'>
       <div className={styles['about__text-wrapper']}>
         <div className={classNames(styles.about__titles)}>
-          <PageTitle text='⎯ обо мне'></PageTitle>
+          <PageTitle text='обо мне'></PageTitle>
           <p className={classNames(styles.about__title)}>
-            Ваш тренер - <em style={{ color: 'red' }}>Елена</em>
+            Фитнес тренер <em>Елена</em>
           </p>
         </div>
         <div className={styles['about__text-wrapper-inner']}>
@@ -42,6 +42,12 @@ export const About = () => {
           </li>
           <li className={styles['about__services-item']}>
             <a className={styles['about__services-link']}>Нутрициология</a>
+          </li>
+          <li className={styles['about__services-item']}>
+            <a className={styles['about__services-link']}>Поддержа</a>
+          </li>
+          <li className={styles['about__services-item']}>
+            <a className={styles['about__services-link']}>Мотивация</a>
           </li>
         </ul>
       </div>
