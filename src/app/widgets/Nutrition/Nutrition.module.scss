@@ -1,0 +1,101 @@
+@use '../../styles/helpers' as *;
+@use '../../styles/variables' as *;
+.nutrition {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    // min-height: 620px;
+    width: 100%;
+    font-family: $font-accent;
+    &__left {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 6rem 4rem;
+        text-align: center;
+        position: relative;
+        overflow: hidden;
+        grid-column-start: 1;
+        grid-row-start: 1;
+        background-color: $color-accent;
+        &::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: radial-gradient(
+                circle at 10% 50%,
+                rgba(255, 255, 255, 0.18) 0%,
+                transparent 60%
+            );
+        }
+    }
+    &__ghost-text {
+        font-size: 20vw;
+        color: rgba($color-light, 0.07);
+
+        font-weight: 300;
+
+        line-height: 1;
+        letter-spacing: rem(6);
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        white-space: nowrap;
+    }
+    &__text {
+        z-index: 10;
+        @include fluid-text(120, 60);
+        line-height: rem(100);
+    }
+    &__footnote {
+        font-family: $font-family-base;
+        font-weight: 100;
+        @include fluid-text(14, 10);
+        letter-spacing: 0.35em;
+        text-transform: uppercase;
+    }
+    &__right {
+        padding: 6rem 4rem;
+        background: $color-light;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        grid-column-start: 2;
+        grid-row-start: 1;
+    }
+    &__subtitle {
+        color: red;
+    }
+    &__specs {
+        list-style-type: disc;
+        color: $color-dark;
+        font-family: $font-family-base;
+        display: flex;
+        flex-direction: column;
+    }
+    &__spec-item {
+        font-weight: 500;
+        position: relative;
+        padding-block: rem(10);
+        color: $color-accent;
+
+        &::after {
+            content: '';
+            position: absolute;
+            width: 100%;
+            background-color: $color-grey;
+            opacity: 0.3;
+            height: 1px;
+            left: -15px;
+            bottom: 0;
+        }
+        p {
+            color: $color-dark;
+        }
+        span {
+            color: $color-light-grey;
+            font-weight: 300;
+        }
+    }
+}

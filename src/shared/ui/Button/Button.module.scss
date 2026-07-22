@@ -1,0 +1,43 @@
+@use '../../../app/styles/helpers/' as *;
+@use '../../../app/styles/variables' as *;
+.button {
+    background-color: transparent;
+    color: $color-dark;
+    text-transform: uppercase;
+    @include fluid-text(11, 11);
+
+    &--small {
+        padding: 0 rem(15);
+        height: rem(24);
+        width: rem(100);
+    }
+
+    &--medium {
+        // padding: 0 rem(25);
+        height: rem(30);
+        width: rem(140);
+    }
+
+    &--large {
+        padding: 0 rem(35);
+        height: rem(40);
+        width: rem(185);
+    }
+    // варианты
+    &--primary {
+        background-color: $color-dark;
+        color: $color-light2;
+    }
+
+    &--secondary {
+        background-color: $color-accent;
+        border: 1px solid $color-light2;
+        color: $color-accent;
+        font-weight: 300;
+    }
+
+    &--ghost {
+        background-color: transparent;
+        color: $color-accent;
+    }
+}
